@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maverick Dreses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylee.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top"> 
+     <div class="container">
+        <a class="navbar-brand d-flex justify-content-between-align-items-center order-lg-0" href="home.html">
+         <img src="images/Capture-removebg-preview.png" alt="site icon">
+        </a>
+         <div class="order-lg-2 nav-btns">
+            <button type="button" class="btn" position-relative>
+                <i class="fa fa-shopping-cart"></i>
+                <span class="position-relative badge bg-primary">5</span>
+            </button>
+            <button type="button" class="btn" position-relative>
+                <i class="fa fa-heart"></i>
+                <span class="position-relative  badge bg-primary">3</span>
+            </button>
+            <button type="button" class="btn" position-relative>
+                <i class="fa fa-search"></i>
+                <span class="position-relative badge bg-primary"></span>
+            </button>
+         </div>
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse order-lg-1" id="navmenu">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="home.html" class="active">Home</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="gallery.html">Gallery</a>
+                </li>
+                  <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <div class="dropdown">
+                            <button class="dropbtn">CATEGORIES
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content row">
+        
+        <a href="Skirts.html">Skirts</a>
+        
+        <a href="Shirts.html">Shirts</a>
+        
+        <a href="P.T T.Shirts.html">P.T T.Shirts</a>
+        
+        <a href="P.T Shorts.html">P.T Shorts</a>
+        
+        <a href="Tie.html">Tie</a>
+        
+        <a href="Belts.html">Belts</a>
+        
+        <a href="Frocks.html">Frocks</a>
+        
+        <a href="P.T T. Track pants.html">P.T T. Track pants</a>
+        
+        <a href="Socks.html">Socks</a>
+                            </div>
+                        </div>
+                     </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="contact.html">Contact us</a> 
+                        </li>
+
+            </ul>
+         </div>
+         </div>
+        </nav>
+<header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top:200px;">
+    <div class="container h-100 d-flex">
+        <div class="carousel-item active carousel-inner">
+            <h2 class="text-captilize text-white">Best Collection</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">New Arrivals</h1>
+            <a href="#" class="btn mt-3 text-uppercase">shop now</a>
+        </div>
+        <div class="carousel-item">
+            <h2 class="text-captilize text-white">Best Price & Offers</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">50% OFF Hurry Up</h1>
+            <a href="#" class="btn mt-3 text-uppercase">Buy now</a>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</header>
+<section id="collection" class="py-5">
+    <div class="container">
+        <div class="tittle text-center">
+            <h2 class="position-relative d-inline-block">New Collection</h2>
+        </div>
+        <div class="row g-0">
+            <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".Mens"> Mens</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".Womens">Womens</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrivals</button>
+            </div>
+            <div class="collection-list mt-4 row gx-0 gy-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class="collection-img position-relative" >
+                        <img src="images/black.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Black shirt</p>
+                        <span class="fw-bold">$35.63</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class="collection-img position-relative">
+                        <img src="images/sleves buterfly 4.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Butterfly shirt</p>
+                        <span class="fw-bold">$39.00</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 for">
+                    <div class="collection-img position-relative">
+                        <img src="images/bm.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Aqua shirt</p>
+                        <span class="fw-bold">$40.03</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class="collection-img">
+                        <img src="images/wm.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Gucci shirt</p>
+                        <span class="fw-bold">$45.00</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class="collection-img">
+                        <img src="images/image 3.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Casual men shirt</p>
+                        <span class="fw-bold">$35.63</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 Mens">
+                    <div class="collection-img">
+                        <img src="images/33.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Sleeves-less frock</p>
+                        <span class="fw-bold">$37.63</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 Mens">
+                    <div class="collection-img">
+                        <img src="images/bts 3.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Black bts shirt</p>
+                        <span class="fw-bold">$35.63</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 Womens">
+                    <div class="collection-img">
+                        <img src="images/sleve shirt 2.jpg" class="w-100">
+                        <span class="position-absolute bg-primary text-white"></span>
+                    </div>
+                    <div class="text center">
+                        <div class="ratings mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                        <p class="text-captilize my-1">Butterfly style</p>
+                        <span class="fw-bold">$37.63</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="Special" class="py-5">
+    <div class="container">
+        <div class="tittle text-center py-5">
+            <h2 class="position-relative d-inline-block">Special Outfits</h2>
+        </div>
+   <div class="special-list row g-0">
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+            <img src="images/yelow.jpg" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class="fas fa-heart"></i>
+            </span>
+        </div>
+     <div class="text-center">
+        <p class="text-captilize mt-3 mb-1">Shoulderless frock</p>
+        <span class="fw-bold d-block">$ 45.60</span>
+        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+     </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+            <img src="images/13 (1).jpg" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class="fas fa-heart"></i>
+            </span>
+        </div>
+     <div class="text-center">
+        <p class="text-captilize mt-3 mb-1">Long skirt with shirt</p>
+        <span class="fw-bold d-block">$ 48.60</span>
+        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+     </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+            <img src="images/11.jpg" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class="fas fa-heart"></i>
+            </span>
+        </div>
+     <div class="text-center">
+        <p class="text-captilize mt-3 mb-1">Western wear</p>
+        <span class="fw-bold d-block">$ 35.60</span>
+        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+     </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+            <img src="images/12.jpg" class="w-100">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class="fas fa-heart"></i>
+            </span>
+        </div>
+     <div class="text-center">
+        <p class="text-captilize mt-3 mb-1">P.T T.shirt pant</p>
+        <span class="fw-bold d-block">$ 45.60</span>
+        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+     </div>
+    </div>
+   </div>
+    </div>
+</section>
+<section id="offers" class="py-5">
+    <div class="container">\
+        <div class="row d-flex align-items-center text-center justify-content-center-lg-start tex-lg-start">
+            <div class="offers content">
+                <span class="text-black">Discount Up To 50%</span>
+                <h2 class="mt-2 mb-4 text-black">Grab Your Favourite Outfit Now</h2>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row gy-lg-5">
+            <div class="col-lg-6">
+                <div class="tittle pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">About us</h2>
+                </div>
+                <p class="lead text-muted">Maverick dresses often feature bold and innovative designs that defy traditional fashion norms. They can include asymmetrical cuts, unusual patterns, or unexpected combinations of materials.</p><p>the most handsome and cute brand embasedar kim taehung 
+             <p>Maverick dresses often feature bold and innovative designs that defy traditional fashion norms. They can include asymmetrical cuts, unusual patterns, or unexpected combinations of materials. </p> Wesbite made by: Rayyan Alam & Sabika Rehan</p>
+                </p>
+            </div>
+            <div class="col-lg-6 order-lg-0">
+                <img src="images/rayyan.jpeg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="popular" class="py-5">
+    <div class="container">
+        <div class="tittle text-center pt-3 pb-5">
+            <h2 class="position-relative d-inline-block ms-4">Popular items of this year</h2>
+        </div>
+        <div class="mdo">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 row g-3">
+                <h3 class="fs-5">Top Rated Outfits</h3>
+                <div class="d-flex align-items-start justify-content-start">
+                    <img src="images/2.jpg" alt="" class="img-fluid pe-3 w-25">
+                </div>
+                <p class="mb-0">Black shirt</p>
+                <span>$ 26.00</span>
+                <div class="d-flex align-items-start justify-content-start">
+                    <img src="images/image 1.jpg" alt="" class="img-fluid pe-3 w-25">
+                </div>
+                <p class="mb-0">office wear</p>
+                <span>$ 28.00</span>
+                <div class="d-flex align-items-start justify-content-start">
+                    <img src="images/image 2.jpg" alt="" class="img-fluid pe-3 w-25">
+                </div>
+                <p class="mb-0">white shirt</p>
+                <span>$ 29.00</span>
+            </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best selling</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/image 3.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <p class="mb-0">white</p>
+                    <span>$ 22.00</span>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/pro-shirt5.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <p class="mb-0">white bo-style</p>
+                    <span>$ 25.00</span>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/white.jpg" alt="" class="img-fluid pe-3 w-25">
+                    </div>
+                    <p class="mb-0">White shirt</p>
+                    <span>$ 21.00</span>
+            </div>
+            <div class="col-md-6 col-lg-4 row g-3">
+                <h3 class="fs-5 ">On sale</h3>
+                <div class="d-flex align-items-start justify-content-start">
+                    <img src="images/wm.jpg" alt="" class="img-fluid pe-3 w-25">
+                </div>
+                <p class="mb-0">Full sleeves shirt</p>
+                <span>$ 26.00</span>
+                <div class="d-flex align-items-start justify-content-start">
+                    <img src="images/bts 3.jpg" alt="" class="img-fluid pe-3 w-25">
+                </div>
+                <p class="mb-0">BTS Black shirt</p>
+                <span>$ 29.00</span>
+                <div class="d-flex align-items-start justify-content-start">
+                    <img src="images/adidas 1.jpg" alt="" class="img-fluid pe-3 w-25">
+                </div>
+                <p class="mb-0">Addidas white shirt</p>
+                <span>$ 26.00</span>
+        </div>
+        </div>
+        
+    </div>
+        </div>
+    </div>
+</section>
+<section id="newsletter" class="py-5">
+    <div class="container">
+        <div class="d-flex flex-coloum align-items-center justify-content-center">
+           <div class="tittle text-center pt-3 pb-5">
+            <h2 class="position-relative d-inline-block ms-4">New Steller Subscription</h2>
+           
+           <p class="text-center text-muted">Maverick dresses often feature bold and innovative designs that defy traditional fashion norms. They can include asymmetrical cuts, unusual patterns, or unexpected combinations of materials.</p>
+           <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="enter your email..">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+           </div>
+        </div>
+        </div>
+  <div class="footer">
+   <footer class="bg-dark py-5">
+        <div class="container-f">
+        <div class="row text-white g-4">
+            <div class="col-md-6 col-lg-3">
+                <a class="text-uppercase text-decoration-none brand text-white" href="home.html">Maverick</a>
+                <p class="text-white text-muted mt-3  ">Lorem Ipsum is simply dummy text of</br> the printing and typesetting industry </br>standard dummy text since the 1500s</p>
+            </div>
+        
+           
+            <div class="col-md-6 col-lg-3 " class="brand">
+                <h5 class="fw-light mb-3 ">Contact us</h5>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <li class="fas fa-map-marked-alt"></li>
+                    </span>
+                    <span class="fw-light">
+                        Gulistan-e-Johar Block 17 Karachi Pakistan
+                    </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <li class="fas fa-envelope"></li>
+                    </span>
+                    <span class="fw-light">
+                        Marveick.support@gmail.com
+                    </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <li class="fas fa-phone-alt"></li>
+                    </span>
+                    <span class="fw-light">
+                        +92 336 223 2741 
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Follow us</h5>
+                <div class="d-flex align-">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <li class="fab fa-facebook"></li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none text-muted fs-4">
+                                <li class="fab fa-twitter"></li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <li class="fab fa-instagram"></li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none text-muted fs-4">
+                                <li class="fab fa-pinterest"></li>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <li class="fab fa-whatsapp"></li>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   </footer>
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
